@@ -1,0 +1,55 @@
+// Other
+ul
+	list-style: none
+	padding: 0
+	margin: 0
+a
+	text-decoration: none
+	color: $black
+
+input, button
+	border: none
+	outline: none
+	padding: 0	
+
+*
+	transition: all, .2s, easy 	
+
+// Contacts
+.contacts
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	&__phone
+		font-family: 'Muller'
+		font-weight: bold
+		font-size: 20px	
+	&__adress
+		font-size: 11px
+		color: $grey
+	&-wrapper
+		display: flex
+	&__icon
+		height: 18px
+		width: 18px
+		margin-right: 8px
+//Social
+.social 
+	display: flex
+	flex-basis: 10%
+	justify-content: space-between
+	&__item	
+		height: 24px
+		width: 24px
+//Navigation
+.nav
+	display: flex			
+	
+.line
+	border-left: 2px solid $grey	
+	height: 16px
+.nav
+	&__item
+		margin-right: 20px	
+		&:last-child
+			margin-right: 0px
