@@ -405,6 +405,34 @@ template {
   font-style: normal;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-arrow {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -505,21 +533,77 @@ input, button {
   font-size: 46px;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.descr {
+  font-family: "Muller";
+  font-size: 14px;
+  font-weight: 600;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+.button {
+  -webkit-box-shadow: 0 3px 0 #c9a21b;
+          box-shadow: 0 3px 0 #c9a21b;
+  border-radius: 21px;
+  background-color: #f0cb4c;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 30px;
+  cursor: pointer;
 }
 
-.container {
-  max-width: 1024px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+.button:hover {
+  background-color: #f2ca45;
+}
+
+.button:active {
+  background-color: #e6b228;
+}
+
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dots__item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dots__item:last-child {
+  margin-right: 0;
+}
+
+.container__arrow {
+  position: relative;
+}
+
+.arrow::before, .arrow::after {
+  content: '';
+  width: 30px;
+  height: 50px;
+  z-index: 999;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 50%;
+  top-margin-top: -50px;
+}
+
+.arrow::before {
+  background-image: url("../img/discount/arrow_left.png");
+  left: 0;
+}
+
+.arrow::after {
+  background-image: url("../img/discount/arrow_right.png");
+  right: 0;
 }
 
 .header {
@@ -777,5 +861,46 @@ html {
 
 .hero__title {
   padding-top: 93px;
+}
+
+.discount {
+  background-color: #f8fafc;
+}
+
+.discount-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.discount__wrapper {
+  padding-top: 135px;
+}
+
+.discount__title {
+  padding-bottom: 41px;
+}
+
+.discount__percent {
+  text-shadow: 0 2px 0 #ddb910;
+  color: #f0cb4c;
+  font-family: "Muller";
+  font-size: 72px;
+  font-weight: 800;
+  padding-bottom: 22px;
+}
+
+.discount__descr {
+  padding-bottom: 36px;
+}
+
+.discount-dots {
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */

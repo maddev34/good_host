@@ -1,4 +1,8 @@
 // Other
+p, h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
 ul
 	list-style: none
 	padding: 0
@@ -56,4 +60,51 @@ input, button
 .title
 	font-family: 'Muller', sans-serif
 	font-weight: 800
-	font-size: 46px				
+	font-size: 46px		
+.descr
+	font-family: "Muller"
+	font-size: 14px
+	font-weight: 600	
+.button
+	box-shadow: 0 3px 0 #c9a21b
+	border-radius: 21px
+	background-color: $gold	
+	font-family: Raleway
+	font-size: 12px
+	font-weight: 700
+	padding: 15px 30px
+	cursor: pointer
+	&:hover
+		background-color: $hover
+	&:active
+		background-color: $active
+//Slider Dots
+.dots
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	&__item
+		margin-right: 10px
+		cursor: pointer	
+		&:last-child
+			margin-right: 0		
+.container__arrow
+	position: relative
+//Slider Arrow
+.arrow::before, .arrow::after
+		content: ''
+		width: 30px
+		height: 50px
+		z-index: 999
+		cursor: pointer
+		display: block
+		position: absolute
+		top: 50%
+    	margin-top: -50px
+.arrow
+	&::before
+		background-image: url('../img/discount/arrow_left.png')
+		left: 0
+	&::after
+		background-image: url('../img/discount/arrow_right.png')			
+		right: 0
