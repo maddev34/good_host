@@ -491,11 +491,18 @@ input, button {
 }
 
 .nav__item {
+  font-size: 14px;
   margin-right: 20px;
 }
 
 .nav__item:last-child {
   margin-right: 0px;
+}
+
+.title {
+  font-family: 'Muller', sans-serif;
+  font-weight: 800;
+  font-size: 46px;
 }
 
 html {
@@ -510,6 +517,7 @@ html {
 
 .container {
   max-width: 1024px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -518,6 +526,15 @@ html {
   background-color: #f8fafc;
   font-family: 'Muller',  sans-serif;
   font-weight: 500;
+}
+
+.header__contacts {
+  min-width: 211px;
+}
+
+.header__nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .header .contacts__icon {
@@ -559,26 +576,24 @@ html {
   border-radius: 14px;
   background-color: #ffffff;
   margin-left: 14px;
+  padding-left: 21px;
+  font-size: 14px;
 }
 
 .header .form-search__input::-webkit-input-placeholder {
   font-family: 'Muller Regular', sans-serif;
-  padding-left: 21px;
 }
 
 .header .form-search__input:-ms-input-placeholder {
   font-family: 'Muller Regular', sans-serif;
-  padding-left: 21px;
 }
 
 .header .form-search__input::-ms-input-placeholder {
   font-family: 'Muller Regular', sans-serif;
-  padding-left: 21px;
 }
 
 .header .form-search__input::placeholder {
   font-family: 'Muller Regular', sans-serif;
-  padding-left: 21px;
 }
 
 .header .form-search__button {
@@ -596,6 +611,10 @@ html {
   padding-top: 4px;
 }
 
+.header__bottom {
+  padding-bottom: 20px;
+}
+
 .header-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,6 +625,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 14px;
 }
 
 .header-bottom .cart {
@@ -622,9 +642,11 @@ html {
 .header-bottom .cart__price {
   font-family: 'Muller', sans-serif;
   font-weight: bold;
+  padding: 2px 2px 0 0;
 }
 
 .header-bottom .cart__price-p {
+  padding-top: 2px;
   line-height: 2px;
   width: 0.4em;
   border-bottom: 1px solid #000;
@@ -645,6 +667,8 @@ html {
           align-items: center;
   font-family: 'Muller', sans-serif;
   font-size: 14px;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
 }
 
 .header-bottom .profile__img {
@@ -659,7 +683,99 @@ html {
   margin-left: 7px;
 }
 
-.header__profile {
-  margin: 0 41px 0 70px;
+.hero {
+  background: url("../img/hero/herobg.jpg") top left no-repeat;
+}
+
+.hero-card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 15px 9px rgba(86, 95, 103, 0.1);
+          box-shadow: 0 5px 15px 9px rgba(86, 95, 103, 0.1);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  max-width: 333px;
+  bottom: 12px;
+  right: 250px;
+}
+
+.hero-card__title {
+  font-weight: 800;
+  font-size: 21px;
+  padding-bottom: 4px;
+}
+
+.hero-card__subtitle {
+  color: #909090;
+  padding-bottom: 12px;
+}
+
+.hero__card {
+  padding: 20px 40px;
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 623px;
+}
+
+.hero__wrapper {
+  position: relative;
+}
+
+.hero-dog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-title__text {
+  color: #f0cb4c;
+  text-shadow: 0 3px 0 #c9a21b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.hero-title__symbol {
+  color: #b1b2b6;
+  font-family: "Muller";
+  font-size: 47px;
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+.hero__title {
+  padding-top: 93px;
 }
 /*# sourceMappingURL=main.css.map */
