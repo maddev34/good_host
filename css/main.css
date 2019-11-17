@@ -634,7 +634,7 @@ input, button {
   background: url("../img/products/dog-bg-1.png") no-repeat;
   width: 278px;
   height: 308px;
-  top: 65%;
+  top: 63%;
   left: 85%;
 }
 
@@ -650,8 +650,8 @@ input, button {
   background: url("../img/products/dog-bg-3.png") no-repeat;
   width: 487px;
   height: 338px;
-  right: -19%;
-  top: -13%;
+  right: -12%;
+  top: -12%;
 }
 
 .header {
@@ -979,8 +979,8 @@ input, button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 22%;
-      flex-basis: 22%;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
   -webkit-box-shadow: 0 3px 6px 4px rgba(30, 32, 36, 0.11);
           box-shadow: 0 3px 6px 4px rgba(30, 32, 36, 0.11);
   border-radius: 20px;
@@ -989,14 +989,15 @@ input, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   z-index: 9;
   background-color: #ffffff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .products .block__img {
   position: relative;
+  margin: 20px 0;
 }
 
 .products .block__name {
@@ -1016,5 +1017,9 @@ input, button {
   font-family: "Muller";
   font-size: 20px;
   font-weight: 800;
+}
+
+.products .block__button {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
