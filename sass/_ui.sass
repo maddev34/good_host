@@ -92,6 +92,10 @@ input, button
 			margin-right: 0		
 .container__arrow
 	position: relative
+.slider-wrapper
+	display: flex
+	align-items: center
+	justify-content: space-between	
 //Slider Arrow
 .arrow::before, .arrow::after
 		content: ''
@@ -102,7 +106,7 @@ input, button
 		display: block
 		position: absolute
 		top: 50%
-    	margin-top: -50px
+		margin-top: -50px
 .arrow
 	&::before
 		background-image: url('../img/discount/arrow_left.png')
