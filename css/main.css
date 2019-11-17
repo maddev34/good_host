@@ -606,6 +606,54 @@ input, button {
   right: 0;
 }
 
+.hit::after, .action::after {
+  content: '';
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 999;
+}
+
+.hit::after {
+  background-image: url("../img/products/hit.png");
+}
+
+.action::after {
+  background-image: url("../img/products/action.png");
+}
+
+.dog::after, .dog-1::after, .dog-2::after {
+  content: '';
+  position: absolute;
+  z-index: 8;
+}
+
+.dog::after {
+  background: url("../img/products/dog-bg-1.png") no-repeat;
+  width: 278px;
+  height: 308px;
+  top: 65%;
+  left: 85%;
+}
+
+.dog-1::after {
+  background: url("../img/products/dog-bg-2.png") no-repeat;
+  width: 344px;
+  height: 381px;
+  top: 59%;
+  left: -22%;
+}
+
+.dog-2::after {
+  background: url("../img/products/dog-bg-3.png") no-repeat;
+  width: 487px;
+  height: 338px;
+  right: -19%;
+  top: -13%;
+}
+
 .header {
   background-color: #f8fafc;
   font-family: 'Muller',  sans-serif;
@@ -902,5 +950,71 @@ input, button {
 
 .discount-dots {
   padding-bottom: 50px;
+}
+
+.products__title {
+  text-align: center;
+  padding: 115px 0 55px 0;
+}
+
+.products-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products__wrapper {
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.products-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  -webkit-box-shadow: 0 3px 6px 4px rgba(30, 32, 36, 0.11);
+          box-shadow: 0 3px 6px 4px rgba(30, 32, 36, 0.11);
+  border-radius: 20px;
+  text-align: center;
+  min-height: 386px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 9;
+  background-color: #ffffff;
+}
+
+.products .block__img {
+  position: relative;
+}
+
+.products .block__name {
+  font-family: "Muller";
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.products .block__descr {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  color: #909090;
+}
+
+.products .block__price {
+  font-family: "Muller";
+  font-size: 20px;
+  font-weight: 800;
 }
 /*# sourceMappingURL=main.css.map */
