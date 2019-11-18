@@ -1038,4 +1038,69 @@ input, button {
 .features__title {
   margin-bottom: 34px;
 }
+
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.about__wrapper {
+  padding-top: 135px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.about-text {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.about__img {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.about__img img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.about__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/about/video-bg.jpg") no-repeat;
+  min-height: 354px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.about__video img {
+  cursor: pointer;
+  max-width: 155px;
+  height: 155px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.about__descr {
+  padding: 65px 50px 0 0;
+}
+
+.about__descr p {
+  padding-bottom: 10px;
+}
 /*# sourceMappingURL=main.css.map */
