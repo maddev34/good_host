@@ -1155,4 +1155,76 @@ input, button {
   width: 18px;
   height: 11px;
 }
+
+.reviews {
+  font-family: "Muller";
+}
+
+.reviews__title {
+  text-align: center;
+  padding: 115px 0 60px 0;
+}
+
+.reviews-block {
+  -webkit-box-shadow: 0 3px 6px 4px rgba(30, 32, 36, 0.11);
+          box-shadow: 0 3px 6px 4px rgba(30, 32, 36, 0.11);
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__img {
+  width: 225px;
+  height: 225px;
+  margin-right: 68px;
+}
+
+.reviews__text {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.reviews__text span {
+  color: #909090;
+  display: block;
+}
+
+.reviews-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__footer {
+  padding-top: 44px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reviews__name span {
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  color: #909090;
+}
+
+.reviews__block {
+  margin-bottom: 140px;
+  padding: 45px 134px 57px 71px;
+}
 /*# sourceMappingURL=main.css.map */
