@@ -1,10 +1,140 @@
+@media screen and (min-width:$screen-sm) and (max-width: $screen-sd-max)
+	.title 
+		font-size: 24px
+	
+	.header
+		z-index: 5
+		&-top
+			flex-direction: column
+		.form-search,.nav,.social
+			display: none
+		&__contacts
+			margin: 15px 0
+		.contacts
+			align-items: center
+			&__icon
+				margin: 0 5px 0 0
+		.profile
+			&__img
+				display: none		 	
+		&-bottom
+			align-items: center		
+			justify-content: space-between
+		&__bottom
+			position: relative
+			padding-bottom: 17px
+			.header__profile
+				margin: 0	
+				font-size: 12px
+			.cart
+				font-size: 12px			
+		.nav__menu
+			position: fixed
+			display: flex		
+			flex-direction: column
+			background-color: $bgcolor
+			top: 195px
+			left: 0
+			width: 100%
+			padding-left: 20px
+			padding-bottom: 10px
+			transform: translateY(-135px)
+			z-index: 3
+		.nav__item
+			display: block
+			margin: auto
+			padding-bottom: 5px
+		.show__menu
+			transform: translateY(0)
+	.hero
+		&__wrapper
+			min-height: 400px
+		&__dog,&__card
+			display: none	
+		&-title__text
+			justify-content: flex-start		
+	.discount
+		&__wrapper
+			padding: 50px 0
+		&__percent
+			font-size: 22px	
+		&__image
+			display: none
+		&__button
+			padding: 10px 15px		
+	.products
+		&-wrapper
+			flex-wrap: wrap
+			justify-content: center
+		&__wrapper
+			padding-bottom: 0	
+		&__title
+			padding: 50px 0	
+		&__block
+			margin-bottom: 20px	
+	.features
+		&__image
+			display: none
+	.about
+		&-wrapper
+			flex-direction: column
+		&__wrapper
+			padding: 50px 0
+		&__descr
+			padding: 20px 0		
+		&__img
+			img
+				width: 100%	
+	.reviews
+		&-block
+			flex-direction: column	
+		&__block
+			padding: 0
+		&__img
+			margin: 0 auto
+		&-body
+			font-size: 16px
+		&__body	
+			padding: 10px		
 
-.header__bottom
-	position: relative	
-.show
-	display: flex
-	transform: translateY(60px) 
-	position: absolute
-	left: 0	
-.nav__btn
-	display: none	
+	.question
+		&__name
+			font-size: 16px						
+	.footer
+		&__nav,&__contacts
+			display: none
+		&__logo
+			margin: 0 auto
+@media screen and(min-width: $screen-sd)
+	.products-wrapper
+		justify-content: space-between
+
+@media screen and(min-width: $screen-md) and (max-width: $screen-md-max)
+	.header
+		.menu__btn,.social
+			display: none
+		&__nav
+			flex-basis: auto
+		&-bottom
+			justify-content: space-between
+	.hero
+		&__dog
+			width: 100%
+	.products
+		&-wrapper
+			flex-wrap: wrap
+			justify-content: space-around
+			padding: 0
+		&-block
+			flex-basis: 34%	
+			margin-bottom: 30px			
+	.about
+		&__decsr
+			padding: 40px 20px 0 0
+	.reviews
+		&__block
+			padding: 20px
+	.footer
+		&__contacts
+			display: none		
+

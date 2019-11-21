@@ -54,10 +54,10 @@
 
 
 
-var navBtn = document.querySelector('.nav__btn');
-	console.log(navBtn);
+var navBtn = document.querySelector('.menu__btn');
+
 	
 	navBtn.addEventListener('click', function(){
-		document.querySelector('.nav').classList.toggle('show');
+		document.querySelector('.nav').classList.toggle('.show__menu');
 	})
 

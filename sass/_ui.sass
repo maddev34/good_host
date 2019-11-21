@@ -103,7 +103,7 @@ input, button
 	align-items: center
 	justify-content: space-between	
 //Slider Arrow
-.arrow-left, .arrow-right
+.arrow__left, .arrow__right
 		width: 30px
 		height: 50px
 		z-index: 999
@@ -113,10 +113,10 @@ input, button
 		top: 50%
 		margin-top: -50px
 .arrow
-	&-left
+	&__left
 		background-image: url('../img/discount/arrow_left.png')
 		left: 0
-	&-right
+	&__right
 		background-image: url('../img/discount/arrow_right.png')			
 		right: 0
 //Icon
@@ -132,7 +132,14 @@ input, button
 	background-image: url('../img/products/hit.png')
 .action::after
 	background-image: url('../img/products/action.png')
-
+.arrow__left,.arrow__right
+	opacity: .5	
+.arrow
+	&__left
+		margin-left: 10px
+	&__right
+.menu__btn
+	display: none
 
 
 	
