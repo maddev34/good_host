@@ -52,6 +52,8 @@
             </div>
             <!-- /.header-top -->
             <div class="header-bottom header__bottom">
+                <img src="/img/menu.png" alt="menu" class="nav__btn">
+
                 <ul class="nav header__nav">
                     <li class="nav__item">
                         <a href="#" class="nav-link">Главная</a>
@@ -139,7 +141,7 @@
         <div class="discount">
             <div class="container-arrow container__arrow arrow">
                 <div class="container">
-                    <div class="slider-wrapper discount__wrapper">
+                    <div class="slides discount__wrapper">
                         <div class="discount-text">
                             <h1 class="title discount__title">Акция до 15.06.2019</h1>
                             <!-- /.title discount__title -->
@@ -162,21 +164,24 @@
                     </div>
                     <!-- /.discount-wrapper -->
                     <ul class="discount__dots dots">
-                        <li class="dots__item dots__item--active"><img src="img/discount/dot_a.png"></li>
-                        <li class="dots__item"><img src="img/discount/dot.png"></li>
-                        <li class="dots__item"><img src="img/discount/dot.png"></li>
+                        <li class="dots__item dots__item--active"></li>
+                        <li class="dots__item"></li>
+                        <li class="dots__item"></li>
                     </ul>
                     <!-- /.discount-dots -->
                 </div>
+                <div class="arrow-left"></div>
+                <div class="arrow-right"></div>
             </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /.discount -->
         <div class="products">
+
             <div class="container">
                 <h2 class="title products__title">Каталог товаров</h2>
                 <!-- /.title products__title -->
-                <div class="products-wrapper products__wrapper dog">
+                <div class="products-wrapper products__wrapper">
                     <div class="products-block">
                         <div class="block__img hit">
                             <img src="img/products/cod.png" alt="">
@@ -243,21 +248,6 @@
                 <!-- /.products-wrapper -->
                 <div class="products-wrapper products__wrapper">
                     <div class="products-block">
-                        <div class="block__img hit">
-                            <img src="img/products/cod.png" alt="">
-                        </div>
-                        <!-- /.block__img -->
-                        <span class="block__name">Треска сушеная</span>
-                        <!-- /.block__name -->
-                        <span class="block__descr">Cодержит много микро - и макроэлементов</span>
-                        <!-- /.block__descr -->
-                        <span class="block__price">800 руб.</span>
-                        <!-- /.block__price -->
-                        <button class="button block__button">Добавить в корзину</button>
-                        <!-- /.button block__button -->
-                    </div>
-                    <!-- /.products-block -->
-                    <div class="products-block">
                         <div class="block__img action">
                             <img src="img/products/cow.png" alt="">
                         </div>
@@ -289,25 +279,6 @@
                     </div>
                     <!-- /.products-block -->
                     <div class="products-block">
-                        <div class="block__img">
-                            <img src="img/products/deer.png" alt="">
-                        </div>
-                        <!-- /.block__img -->
-                        <span class="block__name">Ножка оленья</span>
-                        <!-- /.block__name -->
-                        <span class="block__descr">Игрушка которую можно
-                            грызть</span>
-                        <!-- /.block__descr -->
-                        <span class="block__price">350 руб.</span>
-                        <!-- /.block__price -->
-                        <button class="button block__button">Добавить в корзину</button>
-                        <!-- /.button block__button -->
-                    </div>
-                    <!-- /.products-block -->
-                </div>
-                <!-- /.products-wrapper -->
-                <div class="products-wrapper products__wrapper dog-1">
-                    <div class="products-block">
                         <div class="block__img hit">
                             <img src="img/products/cod.png" alt="">
                         </div>
@@ -317,37 +288,6 @@
                         <span class="block__descr">Cодержит много микро - и макроэлементов</span>
                         <!-- /.block__descr -->
                         <span class="block__price">800 руб.</span>
-                        <!-- /.block__price -->
-                        <button class="button block__button">Добавить в корзину</button>
-                        <!-- /.button block__button -->
-                    </div>
-                    <!-- /.products-block -->
-                    <div class="products-block">
-                        <div class="block__img action">
-                            <img src="img/products/cow.png" alt="">
-                        </div>
-                        <!-- /.block__img -->
-                        <span class="block__name">Ножка
-                            говяжья сушеная</span>
-                        <!-- /.block__name -->
-                        <span class="block__descr">Диетическое лакомство</span>
-                        <!-- /.block__descr -->
-                        <span class="block__price">450 руб.</span>
-                        <!-- /.block__price -->
-                        <button class="button block__button">Добавить в корзину</button>
-                        <!-- /.button block__button -->
-                    </div>
-                    <!-- /.products-block -->
-                    <div class="products-block">
-                        <div class="block__img">
-                            <img src="img/products/pig.png" alt="">
-                        </div>
-                        <!-- /.block__img -->
-                        <span class="block__name">Пятачки</span>
-                        <!-- /.block__name -->
-                        <span class="block__descr">Добавка к пище</span>
-                        <!-- /.block__descr -->
-                        <span class="block__price">1000 руб.</span>
                         <!-- /.block__price -->
                         <button class="button block__button">Добавить в корзину</button>
                         <!-- /.button block__button -->
@@ -373,6 +313,37 @@
                 <!-- /.products-wrapper -->
                 <div class="products-wrapper products__wrapper">
                     <div class="products-block">
+                        <div class="block__img action">
+                            <img src="img/products/cow.png" alt="">
+                        </div>
+                        <!-- /.block__img -->
+                        <span class="block__name">Ножка
+                            говяжья сушеная</span>
+                        <!-- /.block__name -->
+                        <span class="block__descr">Диетическое лакомство</span>
+                        <!-- /.block__descr -->
+                        <span class="block__price">450 руб.</span>
+                        <!-- /.block__price -->
+                        <button class="button block__button">Добавить в корзину</button>
+                        <!-- /.button block__button -->
+                    </div>
+                    <!-- /.products-block -->
+                    <div class="products-block">
+                        <div class="block__img">
+                            <img src="img/products/pig.png" alt="">
+                        </div>
+                        <!-- /.block__img -->
+                        <span class="block__name">Пятачки</span>
+                        <!-- /.block__name -->
+                        <span class="block__descr">Добавка к пище</span>
+                        <!-- /.block__descr -->
+                        <span class="block__price">1000 руб.</span>
+                        <!-- /.block__price -->
+                        <button class="button block__button">Добавить в корзину</button>
+                        <!-- /.button block__button -->
+                    </div>
+                    <!-- /.products-block -->
+                    <div class="products-block">
                         <div class="block__img hit">
                             <img src="img/products/cod.png" alt="">
                         </div>
@@ -387,6 +358,26 @@
                         <!-- /.button block__button -->
                     </div>
                     <!-- /.products-block -->
+                    <div class="products-block">
+                        <div class="block__img">
+                            <img src="img/products/deer.png" alt="">
+                        </div>
+                        <!-- /.block__img -->
+                        <span class="block__name">Ножка оленья</span>
+                        <!-- /.block__name -->
+                        <span class="block__descr">Игрушка которую можно
+                            грызть</span>
+                        <!-- /.block__descr -->
+                        <span class="block__price">350 руб.</span>
+                        <!-- /.block__price -->
+                        <button class="button block__button">Добавить в корзину</button>
+                        <!-- /.button block__button -->
+                    </div>
+                    <!-- /.products-block -->
+                </div>
+                <!-- /.products-wrapper -->
+                <div class="products-wrapper products__wrapper">
+
                     <div class="products-block">
                         <div class="block__img action">
                             <img src="img/products/cow.png" alt="">
@@ -419,6 +410,21 @@
                     </div>
                     <!-- /.products-block -->
                     <div class="products-block">
+                        <div class="block__img hit">
+                            <img src="img/products/cod.png" alt="">
+                        </div>
+                        <!-- /.block__img -->
+                        <span class="block__name">Треска сушеная</span>
+                        <!-- /.block__name -->
+                        <span class="block__descr">Cодержит много микро - и макроэлементов</span>
+                        <!-- /.block__descr -->
+                        <span class="block__price">800 руб.</span>
+                        <!-- /.block__price -->
+                        <button class="button block__button">Добавить в корзину</button>
+                        <!-- /.button block__button -->
+                    </div>
+                    <!-- /.products-block -->
+                    <div class="products-block">
                         <div class="block__img">
                             <img src="img/products/deer.png" alt="">
                         </div>
@@ -436,7 +442,7 @@
                     <!-- /.products-block -->
                 </div>
                 <!-- /.products-wrapper -->
-                <div class="products-wrapper products__wrapper dog-2">
+                <div class="products-wrapper products__wrapper">
                     <div class="products-block">
                         <div class="block__img hit">
                             <img src="img/products/cod.png" alt="">
@@ -502,13 +508,12 @@
                 </div>
                 <!-- /.products-wrapper -->
             </div>
-            <!-- /.container -->
         </div>
         <!-- /.products -->
         <div class="features">
             <div class="container-arrow container__arrow arrow">
                 <div class="container">
-                    <div class="slider-wrapper features__wrapper">
+                    <div class="slides features__wrapper">
                         <div class="features-text">
                             <h3 class="title features__title">Используем свежее
                                 и качественное сырье </h3>
@@ -526,16 +531,18 @@
                     </div>
                     <!-- /.features-image -->
                     <ul class=" features__dots dots">
-                        <li class="dots__item"><img src="img/discount/dot_a.png" alt=""></li>
+                        <li class="dots__item dots__item--active"></li>
                         <!-- /.dots__item -->
-                        <li class="dots__item"><img src="img/discount/dot.png" alt=""></li>
+                        <li class="dots__item"></li>
                         <!-- /.dots__item -->
-                        <li class="dots__item"><img src="img/discount/dot.png" alt=""></li>
+                        <li class="dots__item"></li>
                         <!-- /.dots__item -->
                     </ul>
                     <!-- /.dots -->
                 </div>
                 <!-- /.container -->
+                <div class="arrow-left"></div>
+                <div class="arrow-right"></div>
             </div>
             <!-- /.container-arrow container__arrow arrow -->
         </div>

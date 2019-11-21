@@ -1,0 +1,136 @@
+@media screen and (min-width:$screen-lg) and (max-width:$screen-lg-max)
+	.hero__dog
+		width: 100%
+	.dog::after
+		left: 72%
+	.dog-1::after
+		left: 0
+	.dog-2::after
+		right: 0
+	.arrow-left,.arrow-right
+		opacity: .5
+	.arrow-left
+		margin-left: 5px
+	.arrow-right
+		margin-right: 5px
+
+@media screen and (min-width:$screen-md) and (max-width:$screen-md-max)
+	.dog::after,.dog-1::after,.dog-2::after
+		display: none
+	.hero__dog
+		width: 100%
+	.arrow-left
+		margin-left: 5px
+	.arrow-right
+		margin-right: 5px
+	.arrow-left,.arrow-right
+		opacity: .5
+	.social
+		display: none
+	.nav__item
+		margin-right: 10px
+	.header-bottom
+		justify-content: space-between
+	.hero
+		&-wrapper
+			min-height: 560px
+		&__title
+			padding-top: 50px
+		&__card
+			right: 80px
+	.discount
+		&__wrapper
+			padding: 100px 0
+		&__percent
+			font-size: 50px
+			padding-bottom: 20px
+		&__descr
+			padding-bottom: 20px
+		&__image
+			img
+				width: 100%
+	.title
+		font-size: 30px
+	.products
+		&-wrapper
+			flex-wrap: wrap
+			justify-content: space-around
+			padding-bottom: 0
+		&-block
+			flex-basis: 42%
+			margin-bottom: 30px
+	.about
+		&__wrapper
+			flex-direction: column
+		&-text
+			text-align: left
+			padding: 0 60px 20px 60px
+	.reviews
+		&__block
+			padding: 20px
+	.footer
+		.nav
+			display: none
+@media screen and (min-width:$screen-sm) and (max-width:$screen-sm-max)
+	.dog::after,.dog-1::after,.dog-2::after
+		display: none
+	.hero__dog
+		width: 100%
+	.arrow-left
+		margin-left: 5px
+	.arrow-right
+		margin-right: 5px
+	.arrow-left,.arrow-right
+		opacity: .5
+	.social,.form-search,.nav
+		display: none
+	.nav__item
+		margin-right: 10px
+	.header-bottom
+		justify-content: flex-end
+	.hero
+		&-wrapper
+			min-height: 560px
+		&__title
+			padding-top: 50px
+		&__card
+			right: 80px
+	.discount
+		&__wrapper
+			padding: 100px 0
+		&__percent
+			font-size: 50px
+			padding-bottom: 20px
+		&__descr
+			padding-bottom: 20px
+		&__image
+			img
+				width: 100%
+	.title
+		font-size: 30px
+	.products
+		&-wrapper
+			flex-wrap: wrap
+			justify-content: space-around
+			padding-bottom: 0
+		&-block
+			flex-basis: 42%
+			margin-bottom: 30px
+	.about
+		&__wrapper
+			flex-direction: column
+		&-text
+			text-align: left
+			padding: 0 60px 20px 60px
+		&__img
+			img
+				width: 100%	
+	.reviews
+		&__block
+			padding: 20px
+	.footer
+		.nav
+			display: none
+	.features__image,.discount__image
+		img
+			width: 100%		

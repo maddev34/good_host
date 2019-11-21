@@ -428,6 +428,12 @@ html {
   margin: 0 auto;
 }
 
+.products__image-bg {
+  max-width: 1344px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -572,6 +578,10 @@ input, button {
 }
 
 .dots__item {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #909090;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -580,11 +590,15 @@ input, button {
   margin-right: 0;
 }
 
+.dots__item--active {
+  background-color: black;
+}
+
 .container__arrow {
   position: relative;
 }
 
-.slider-wrapper {
+.slides {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,8 +610,7 @@ input, button {
           justify-content: space-between;
 }
 
-.arrow::before, .arrow::after {
-  content: '';
+.arrow-left, .arrow-right {
   width: 30px;
   height: 50px;
   z-index: 999;
@@ -608,12 +621,12 @@ input, button {
   margin-top: -50px;
 }
 
-.arrow::before {
+.arrow-left {
   background-image: url("../img/discount/arrow_left.png");
   left: 0;
 }
 
-.arrow::after {
+.arrow-right {
   background-image: url("../img/discount/arrow_right.png");
   right: 0;
 }
@@ -634,36 +647,6 @@ input, button {
 
 .action::after {
   background-image: url("../img/products/action.png");
-}
-
-.dog::after, .dog-1::after, .dog-2::after {
-  content: '';
-  position: absolute;
-  z-index: 8;
-}
-
-.dog::after {
-  background: url("../img/products/dog-bg-1.png") no-repeat;
-  width: 278px;
-  height: 308px;
-  top: 63%;
-  left: 85%;
-}
-
-.dog-1::after {
-  background: url("../img/products/dog-bg-2.png") no-repeat;
-  width: 344px;
-  height: 381px;
-  top: 59%;
-  left: -22%;
-}
-
-.dog-2::after {
-  background: url("../img/products/dog-bg-3.png") no-repeat;
-  width: 487px;
-  height: 338px;
-  right: -12%;
-  top: -12%;
 }
 
 .header {
@@ -848,10 +831,6 @@ input, button {
   font-size: 14px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  position: absolute;
-  max-width: 333px;
-  bottom: 12px;
-  right: 250px;
 }
 
 .hero-card__title {
@@ -867,17 +846,22 @@ input, button {
 
 .hero__card {
   padding: 20px 40px;
+  position: absolute;
+  max-width: 333px;
+  bottom: 12px;
+  right: 250px;
 }
 
 .hero-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 623px;
 }
 
 .hero__wrapper {
   position: relative;
+  min-height: 623px;
+  width: 100%;
 }
 
 .hero-dog {
@@ -942,6 +926,7 @@ input, button {
   font-size: 72px;
   font-weight: 800;
   padding-bottom: 22px;
+  display: inline-block;
 }
 
 .discount__descr {
@@ -950,6 +935,10 @@ input, button {
 
 .discount__dots {
   padding-bottom: 55px;
+}
+
+.products {
+  background: url("../img/products/products-bg.png") center center no-repeat;
 }
 
 .products__title {
@@ -993,6 +982,9 @@ input, button {
   background-color: #ffffff;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: "Muller";
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .products .block__img {
@@ -1000,23 +992,11 @@ input, button {
   margin: 20px 0;
 }
 
-.products .block__name {
-  font-family: "Muller";
-  font-size: 20px;
-  font-weight: 800;
-}
-
 .products .block__descr {
   font-family: "Raleway";
   font-size: 12px;
   font-weight: 500;
   color: #909090;
-}
-
-.products .block__price {
-  font-family: "Muller";
-  font-size: 20px;
-  font-weight: 800;
 }
 
 .products .block__button {
@@ -1043,9 +1023,9 @@ input, button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about__wrapper {
@@ -1306,5 +1286,23 @@ input, button {
 .footer .time__hour {
   margin-top: 5px;
   display: inline-block;
+}
+
+.header__bottom {
+  position: relative;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  position: absolute;
+  left: 0;
+}
+
+.nav__btn {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

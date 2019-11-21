@@ -86,19 +86,24 @@ input, button
 	align-items: flex-start
 	justify-content: center
 	&__item
+		width: 15px
+		height: 15px
+		border-radius: 10px
+		background-color: $grey
 		margin-right: 10px
 		cursor: pointer	
 		&:last-child
-			margin-right: 0		
+			margin-right: 0	
+.dots__item--active
+	background-color: black				
 .container__arrow
 	position: relative
-.slider-wrapper
+.slides
 	display: flex
 	align-items: center
 	justify-content: space-between	
 //Slider Arrow
-.arrow::before, .arrow::after
-		content: ''
+.arrow-left, .arrow-right
 		width: 30px
 		height: 50px
 		z-index: 999
@@ -108,10 +113,10 @@ input, button
 		top: 50%
 		margin-top: -50px
 .arrow
-	&::before
+	&-left
 		background-image: url('../img/discount/arrow_left.png')
 		left: 0
-	&::after
+	&-right
 		background-image: url('../img/discount/arrow_right.png')			
 		right: 0
 //Icon
@@ -127,28 +132,11 @@ input, button
 	background-image: url('../img/products/hit.png')
 .action::after
 	background-image: url('../img/products/action.png')
-//Dog background
-.dog::after,.dog-1::after,.dog-2::after
-	content: ''
-	position: absolute
-	z-index: 8
-.dog::after
-	background: url('../img/products/dog-bg-1.png') no-repeat
-	width: 278px
-	height: 308px
-	top: 63%
-	left: 85%
-.dog-1::after
-	background: url('../img/products/dog-bg-2.png') no-repeat
-	width: 344px
-	height: 381px
-	top: 59%
-	left: -22%
-.dog-2::after
-	background: url('../img/products/dog-bg-3.png') no-repeat	
-	width: 487px
-	height: 338px
-	right: -12%
-	top: -12%
+
+
+
+	
+
+
 	
 
